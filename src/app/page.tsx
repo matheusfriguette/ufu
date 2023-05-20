@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const homePage = (
@@ -7,8 +8,8 @@ const homePage = (
   currentSlide: number,
   setCurrentSlide: (currentSlide: number) => void
 ) => (
-  <div className="h-screen">
-    <header className="fixed flex w-full justify-between bg-blue px-2 py-4 text-white">
+  <div className="min-h-screen">
+    <header className="fixed top-0 z-10 flex h-10 w-full items-center justify-between bg-blue px-2 text-white">
       <div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +33,7 @@ const homePage = (
       </div>
     </header>
 
-    <main className="flex h-full flex-col bg-gray pt-14">
+    <main className="flex h-full flex-col bg-gray py-10">
       <div className="relative h-[200px] bg-transparent text-center">
         {currentSlide === 1 && (
           <div className="relative h-full w-full overflow-hidden bg-banner-1 bg-cover bg-center">
@@ -252,13 +253,109 @@ const homePage = (
           </svg>
         </div>
       </div>
+
+      <div className="mt-4 bg-white p-4">
+        <div className="flex items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 384 512"
+            fill="currentColor"
+            className="h-5 w-5 text-blue"
+          >
+            <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+          </svg>
+
+          <div className="ml-2 text-xl font-bold text-blue">
+            Eventos em andamento
+          </div>
+        </div>
+
+        <div className="mt-4 flex items-start gap-4 overflow-x-scroll bg-white">
+          <div className="flex h-[150px] min-w-[250px] flex-col justify-end overflow-hidden rounded border border-gray6 bg-event-1 bg-no-repeat">
+            <div className="flex flex-col items-center justify-center gap-1 bg-white py-1 text-center text-blue">
+              <div className="text-sm leading-tight tracking-normal">
+                Celebração do Dia Internacional de Museus e Dia do Físico
+              </div>
+              <div className="text-xs">
+                18/05/2023 - 19:00 até 20/05/2023 - 20:00
+              </div>
+            </div>
+          </div>
+
+          <div className="flex h-[150px] min-w-[250px] flex-col justify-end overflow-hidden rounded border border-gray6 bg-event-2 bg-no-repeat">
+            <div className="flex flex-col items-center justify-center gap-1 bg-white py-1 text-center text-blue">
+              <div className="text-sm leading-tight tracking-normal">
+                Oficina: 'Leitura Instrumental em Língua Inglesa para Enem e
+                Vestibular'
+              </div>
+              <div className="text-xs">
+                15/05/2023 - 17:30 até 25/05/2023 - 19:00
+              </div>
+            </div>
+          </div>
+
+          <div className="flex h-[150px] min-w-[250px] flex-col justify-end overflow-hidden rounded border border-gray6 bg-event-3 bg-no-repeat">
+            <div className="flex flex-col items-center justify-center gap-1 bg-white py-1 text-center text-blue">
+              <div className="text-sm leading-tight tracking-normal">
+                Escrita acadêmica para estudantes estrangeiros - Módulo II
+              </div>
+              <div className="text-xs">
+                12/05/2023 - 14:00 até 16/06/2023 - 15:30
+              </div>
+            </div>
+          </div>
+
+          <div className="flex h-[150px] min-w-[250px] flex-col justify-end overflow-hidden rounded border border-gray6 bg-event-4 bg-no-repeat">
+            <div className="flex flex-col items-center justify-center gap-1 bg-white py-1 text-center text-blue">
+              <div className="text-sm leading-tight tracking-normal">
+                Pró-Reitoria de Gestão de Pessoas no Hospital de Clínicas
+              </div>
+              <div className="text-xs">
+                02/05/2023 - 15:00 até 23/05/2023 - 19:00
+              </div>
+            </div>
+          </div>
+
+          <div className="flex h-[150px] min-w-[250px] flex-col justify-end overflow-hidden rounded border border-gray6 bg-event-5 bg-no-repeat">
+            <div className="flex flex-col items-center justify-center gap-1 bg-white py-1 text-center text-blue">
+              <div className="text-sm leading-tight tracking-normal">
+                Minicurso de extensão 'Ficção cientifica na Língua Inglesa'
+              </div>
+              <div className="text-xs">
+                29/04/2023 - 15:00 até 03/06/2023 - 16:00
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
+
+    <footer className="fixed bottom-0 flex h-10 w-full items-center justify-between bg-gray3 px-1 text-blue">
+      <div className="flex w-2/3 items-center gap-2 text-[10px] font-bold">
+        <Image src="/ctic-logo.svg" alt="Logo CTIC" width={38} height={20} />
+        <div className="flex flex-col">
+          <div>CTIC - Centro de Tecnologia</div>
+          <div>da Informação e Comunicação</div>
+        </div>
+      </div>
+      <div className="z-10 flex w-1/3 items-center justify-end gap-1 pt-3 text-[10px] font-bold">
+        <div>Fale Conosco</div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+          fill="currentColor"
+          className="h-3 w-3"
+        >
+          <path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
+        </svg>
+      </div>
+    </footer>
   </div>
 );
 
 const digitalIdPage = (setDigitalId: (digitalId: boolean) => void) => (
-  <div className="h-screen">
-    <header className="fixed flex w-full justify-between bg-blue px-2 py-4 text-white">
+  <>
+    <header className="fixed top-0 z-10 flex h-10 w-full items-center justify-between bg-blue px-2 text-white">
       <div className="flex gap-1" onClick={() => setDigitalId(false)}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -283,17 +380,17 @@ const digitalIdPage = (setDigitalId: (digitalId: boolean) => void) => (
       </div>
     </header>
 
-    <main className="flex h-full flex-col bg-ufu bg-[length:30px_30px] pt-14">
+    <main className="flex min-h-screen flex-col bg-ufu bg-[length:30px_30px] pt-10">
       <div className="h-20 bg-ufu-header bg-contain bg-center bg-no-repeat bg-origin-content px-5 pb-6 pt-4"></div>
 
       <div className="h-[100px] border-b-4 border-t-4 border-blue bg-white">
         <div className="absolute ml-[10px] mt-[-17px] h-[130px] w-[130px] rounded-full border-4 border-blue bg-profile-pic bg-cover bg-center"></div>
         <div className="flex h-full flex-col items-center justify-center pl-[150px] pr-[10px] text-center">
-          <div className="text-lg font-bold leading-none tracking-normal">
-            JOSE DA SILVA NETO
+          <div className="font-bold leading-none tracking-normal">
+            MATHEUS FERREIRA RIGUETTE DE SOUZA
           </div>
           <div className="mt-1 text-sm leading-none">
-            GRADUAÇÃO EM ENGENHARIA ELÉTRICA: BACHARELADO - INTEGRAL
+            GRADUAÇÃO EM SISTEMAS DE INFORMAÇÃO: BACHARELADO - NOTURNO
           </div>
         </div>
       </div>
@@ -304,19 +401,19 @@ const digitalIdPage = (setDigitalId: (digitalId: boolean) => void) => (
             Matrícula:
           </div>
           <div className="border-b border-gray5 px-4 py-1 font-medium">
-            371283182
+            11811BSI241
           </div>
           <div className="border-b border-gray5 bg-gray3 px-4 py-1 font-bold text-gray4">
             CPF:
           </div>
           <div className="border-b border-gray5 px-4 py-1 font-medium">
-            123.490.023-32
+            146.621.666-24
           </div>
           <div className="border-b border-gray5 bg-gray3 px-4 py-1 font-bold text-gray4">
             R.G / Org. Exp.:
           </div>
           <div className="border-b border-gray5 px-4 py-1 font-medium">
-            MG93209293 - PC/MG
+            MG21090224 - PC/MG
           </div>
           <div className="border-b border-gray5 bg-gray3 px-4 py-1 font-bold text-gray4">
             Naturalidade:
@@ -328,14 +425,14 @@ const digitalIdPage = (setDigitalId: (digitalId: boolean) => void) => (
             Filiação:
           </div>
           <div className="border-b border-gray5 px-4 py-1 font-medium">
-            <div>Ancelotti</div>
-            <div>Carletta</div>
+            <div>Marcio Riguette de Souza</div>
+            <div>Irisléa Ferreira dos Santos</div>
           </div>
           <div className="border-b border-gray5 bg-gray3 px-4 py-1 font-bold text-gray4">
             Data de nascimento:
           </div>
           <div className="border-b border-gray5 px-4 py-1 font-medium">
-            03/09/2000
+            14/02/2001
           </div>
           <div className="border-b border-gray5 bg-gray3 px-4 py-1 font-bold text-gray4">
             Data de Validade:
@@ -346,7 +443,7 @@ const digitalIdPage = (setDigitalId: (digitalId: boolean) => void) => (
         </div>
       </div>
     </main>
-  </div>
+  </>
 );
 
 export default function Home() {
