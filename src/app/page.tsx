@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const homePage = (setDigitalId: (digitalId: boolean) => void) => (
   <div className="h-screen">
-    <header className="flex justify-between px-2 py-4 text-white bg-blue">
+    <header className="fixed flex justify-between w-full px-2 py-4 text-white bg-blue">
       <div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +28,7 @@ const homePage = (setDigitalId: (digitalId: boolean) => void) => (
       </div>
     </header>
 
-    <main className="flex flex-col h-full bg-gray">
+    <main className="flex flex-col h-full bg-gray pt-14">
       <div></div>
 
       <div className="flex items-start gap-4 p-4 mt-4 overflow-x-scroll bg-white">
@@ -192,7 +192,7 @@ const homePage = (setDigitalId: (digitalId: boolean) => void) => (
 
 const digitalIdPage = (
   <div className="h-screen">
-    <header className="flex justify-between px-2 py-4 text-white bg-blue">
+    <header className="fixed flex justify-between w-full px-2 py-4 text-white bg-blue">
       <div className="flex gap-1">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -217,7 +217,7 @@ const digitalIdPage = (
       </div>
     </header>
 
-    <main className="flex h-full flex-col bg-ufu bg-[length:30px_30px]">
+    <main className="flex h-full flex-col bg-ufu bg-[length:30px_30px] pt-14">
       <div className="h-20 px-5 pt-4 pb-6 bg-center bg-no-repeat bg-contain bg-ufu-header bg-origin-content"></div>
 
       <div className="h-[100px] border-b-4 border-t-4 border-blue bg-white">
@@ -228,6 +228,54 @@ const digitalIdPage = (
           </div>
           <div className="mt-1 text-sm leading-none">
             GRADUAÇÃO EM ENGENHARIA ELÉTRICA: BACHARELADO - INTEGRAL
+          </div>
+        </div>
+      </div>
+
+      <div className="flex-grow px-5 py-8 mt-5">
+        <div className="mx-auto h-full w-[90%] overflow-hidden overflow-y-scroll rounded-[10px] bg-white py-[1px] shadow-[0_0_3px_#3751b8]">
+          <div className="px-4 py-1 font-bold border-b border-gray5 bg-gray3 text-gray4">
+            Matrícula:
+          </div>
+          <div className="px-4 py-1 font-medium border-b border-gray5">
+            371283182
+          </div>
+          <div className="px-4 py-1 font-bold border-b border-gray5 bg-gray3 text-gray4">
+            CPF:
+          </div>
+          <div className="px-4 py-1 font-medium border-b border-gray5">
+            123.490.023-32
+          </div>
+          <div className="px-4 py-1 font-bold border-b border-gray5 bg-gray3 text-gray4">
+            R.G / Org. Exp.:
+          </div>
+          <div className="px-4 py-1 font-medium border-b border-gray5">
+            MG93209293 - PC/MG
+          </div>
+          <div className="px-4 py-1 font-bold border-b border-gray5 bg-gray3 text-gray4">
+            Naturalidade:
+          </div>
+          <div className="px-4 py-1 font-medium border-b border-gray5">
+            Uberlândia
+          </div>
+          <div className="px-4 py-1 font-bold border-b border-gray5 bg-gray3 text-gray4">
+            Filiação:
+          </div>
+          <div className="px-4 py-1 font-medium border-b border-gray5">
+            <div>Ancelotti</div>
+            <div>Carletta</div>
+          </div>
+          <div className="px-4 py-1 font-bold border-b border-gray5 bg-gray3 text-gray4">
+            Data de nascimento:
+          </div>
+          <div className="px-4 py-1 font-medium border-b border-gray5">
+            03/09/2000
+          </div>
+          <div className="px-4 py-1 font-bold border-b border-gray5 bg-gray3 text-gray4">
+            Data de Validade:
+          </div>
+          <div className="px-4 py-1 font-medium border-b border-gray5">
+            30/06/2023
           </div>
         </div>
       </div>
