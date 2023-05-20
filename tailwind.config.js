@@ -22,6 +22,9 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
+        'banner-1': "url('/banner-1.png')",
+        'banner-2': "url('/banner-2.png')",
+        'banner-3': "url('/banner-3.jpeg')",
         'ufu': "url('/ufu-logo.png')",
         'ufu-header': "url('/ufu-logo-header.svg')",
         'profile-pic': "url('/profile-pic.jpg')",
