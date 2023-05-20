@@ -285,8 +285,8 @@ const homePage = (
           <div className="flex h-[150px] min-w-[250px] flex-col justify-end overflow-hidden rounded border border-gray6 bg-event-2 bg-no-repeat">
             <div className="flex flex-col items-center justify-center gap-1 bg-white py-1 text-center text-blue">
               <div className="text-sm leading-tight tracking-normal">
-                Oficina: 'Leitura Instrumental em Língua Inglesa para Enem e
-                Vestibular'
+                Oficina: Leitura Instrumental em Língua Inglesa para Enem e
+                Vestibular
               </div>
               <div className="text-xs">
                 15/05/2023 - 17:30 até 25/05/2023 - 19:00
@@ -319,7 +319,7 @@ const homePage = (
           <div className="flex h-[150px] min-w-[250px] flex-col justify-end overflow-hidden rounded border border-gray6 bg-event-5 bg-no-repeat">
             <div className="flex flex-col items-center justify-center gap-1 bg-white py-1 text-center text-blue">
               <div className="text-sm leading-tight tracking-normal">
-                Minicurso de extensão 'Ficção cientifica na Língua Inglesa'
+                Minicurso de extensão Ficção cientifica na Língua Inglesa
               </div>
               <div className="text-xs">
                 29/04/2023 - 15:00 até 03/06/2023 - 16:00
