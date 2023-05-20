@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="h-screen">
@@ -28,21 +30,25 @@ export default function Home() {
       <main className="flex flex-col h-full bg-gray">
         <div></div>
 
-        <div className="flex items-start justify-between p-4 mt-4 bg-white">
-          <div className="flex w-[70px] flex-col items-center">
-            <div className="flex items-center justify-center w-16 h-16 rounded-full bg-blue">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 384 512"
-                fill="currentColor"
-                className="w-8 h-8 text-white"
-              >
-                <path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zm96 320h64c44.2 0 80 35.8 80 80c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16c0-44.2 35.8-80 80-80zm-32-96a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zM144 64h96c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
-              </svg>
+        <div className="flex items-start gap-4 p-4 mt-4 overflow-x-scroll bg-white">
+          <Link href="/id-digital">
+            <div className="flex flex-col items-center">
+              <div className="flex items-center justify-center w-16 h-16 rounded-full bg-blue">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                  fill="currentColor"
+                  className="w-8 h-8 text-white"
+                >
+                  <path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zm96 320h64c44.2 0 80 35.8 80 80c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16c0-44.2 35.8-80 80-80zm-32-96a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zM144 64h96c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
+                </svg>
+              </div>
+              <div className="mt-1 text-xs text-center text-blue">
+                Id Digital
+              </div>
             </div>
-            <div className="mt-1 text-xs text-center text-blue">Id Digital</div>
-          </div>
-          <div className="flex w-[70px] flex-col items-center">
+          </Link>
+          <div className="flex flex-col items-center">
             <div className="flex items-center justify-center w-16 h-16 rounded-full bg-blue">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +61,7 @@ export default function Home() {
             </div>
             <div className="mt-1 text-xs text-center text-blue">Comunica</div>
           </div>
-          <div className="flex w-[70px] flex-col items-center">
+          <div className="flex flex-col items-center">
             <div className="flex items-center justify-center w-16 h-16 rounded-full bg-blue">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +74,7 @@ export default function Home() {
             </div>
             <div className="mt-1 text-xs text-center text-blue">Eventos</div>
           </div>
-          <div className="flex w-[70px] flex-col items-center">
+          <div className="flex flex-col items-center">
             <div className="flex items-center justify-center w-16 h-16 rounded-full bg-blue">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +89,7 @@ export default function Home() {
               Restaurantes
             </div>
           </div>
-          <div className="flex w-[70px] flex-col items-center">
+          <div className="flex flex-col items-center">
             <div className="flex items-center justify-center w-16 h-16 rounded-full bg-blue">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -97,6 +103,32 @@ export default function Home() {
             <div className="mt-1 text-xs text-center text-blue">
               Calendário Acadêmico
             </div>
+          </div>
+          <div className="flex flex-col items-center">
+            <div className="flex items-center justify-center w-16 h-16 rounded-full bg-blue">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 576 512"
+                fill="currentColor"
+                className="w-8 h-8 text-white"
+              >
+                <path d="M288 0C422.4 0 512 35.2 512 80V96l0 32c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32l0 160c0 17.7-14.3 32-32 32v32c0 17.7-14.3 32-32 32H416c-17.7 0-32-14.3-32-32V448H192v32c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32l0-32c-17.7 0-32-14.3-32-32l0-160c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h0V96h0V80C64 35.2 153.6 0 288 0zM128 160v96c0 17.7 14.3 32 32 32H272V128H160c-17.7 0-32 14.3-32 32zM304 288H416c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32H304V288zM144 400a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm288 0a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM384 80c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16s7.2 16 16 16H368c8.8 0 16-7.2 16-16z" />
+              </svg>
+            </div>
+            <div className="mt-1 text-xs text-center text-blue">Intercampi</div>
+          </div>
+          <div className="flex flex-col items-center">
+            <div className="flex items-center justify-center w-16 h-16 rounded-full bg-blue">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 576 512"
+                fill="currentColor"
+                className="w-8 h-8 text-white"
+              >
+                <path d="M384 476.1L192 421.2V35.9L384 90.8V476.1zm32-1.2V88.4L543.1 37.5c15.8-6.3 32.9 5.3 32.9 22.3V394.6c0 9.8-6 18.6-15.1 22.3L416 474.8zM15.1 95.1L160 37.2V423.6L32.9 474.5C17.1 480.8 0 469.2 0 452.2V117.4c0-9.8 6-18.6 15.1-22.3z" />
+              </svg>
+            </div>
+            <div className="mt-1 text-xs text-center text-blue">Mapas</div>
           </div>
         </div>
 
@@ -131,7 +163,7 @@ export default function Home() {
               Almoço
             </div>
             <div className="w-full px-3 py-1 text-white rounded-r rounded-bl bg-blue">
-              Feijoada
+              Hoje não será servido almoço
             </div>
           </div>
 
@@ -140,12 +172,20 @@ export default function Home() {
               Jantar
             </div>
             <div className="w-full px-3 py-1 text-white rounded-r rounded-bl bg-blue">
-              Isca de Frango ao Molho Barbecue
+              Hoje não será servido jantar
             </div>
           </div>
 
-          <div className="flex justify-end mt-4 text-xs">
-            Ver cardápio completo
+          <div className="flex items-center justify-end gap-1 mt-4 text-xs">
+            <div>Ver cardápio completo</div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              fill="currentColor"
+              className="w-4 h-4"
+            >
+              <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 135.1l99.9 107.1c3.5 3.8 5.5 8.7 5.5 13.8s-2 10.1-5.5 13.8L294.6 376.9c-4.2 4.5-10.1 7.1-16.3 7.1C266 384 256 374 256 361.7l0-57.7-96 0c-17.7 0-32-14.3-32-32l0-32c0-17.7 14.3-32 32-32l96 0 0-57.7c0-12.3 10-22.3 22.3-22.3c6.2 0 12.1 2.6 16.3 7.1z" />
+            </svg>
           </div>
         </div>
       </main>

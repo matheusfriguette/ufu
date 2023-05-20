@@ -17,6 +17,13 @@ module.exports = {
       gray2: '#444',
       blue: '#004a97'
     },
+    extend: {
+      backgroundImage: {
+        'ufu': "url('/ufu-logo.png')",
+        'ufu-header': "url('/ufu-logo-header.svg')",
+        'profile-pic': "url('/profile-pic.jpg')",
+      }
+    }
   },
   plugins: [],
 }
