@@ -40,8 +40,8 @@ const homePage = (
             <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-b from-transparent to-black text-left text-white">
               <div className="absolute bottom-0 left-0 w-full px-4 py-2">
                 <div className="font-semibold">
-                  Convocados precisam manifestar interesse em participação na
-                  quarta chamada da lista de espera do Sisu 2023/1
+                  Projeto de extensão promove jornada de ciência aberta na
+                  prática
                 </div>
                 <div className="text-right text-xs">6 horas atrás</div>
               </div>
@@ -53,8 +53,9 @@ const homePage = (
             <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-b from-transparent to-black text-left text-white">
               <div className="absolute bottom-0 left-0 w-full px-4 py-2">
                 <div className="font-semibold">
-                  Estudantes da UFU levam o primeiro lugar em festival virtual
-                  de música
+                  Estudo da UFU, em parceria com a Fiocruz, reafirma segurança
+                  da vacinação contra a covid-19 mesmo em indivíduos com
+                  alergias respiratórias
                 </div>
                 <div className="text-right text-xs">12 horas atrás</div>
               </div>
@@ -66,7 +67,8 @@ const homePage = (
             <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-b from-transparent to-black text-left text-white">
               <div className="absolute bottom-0 left-0 w-full px-4 py-2">
                 <div className="font-semibold">
-                  Empreendedorismo por meio do corte e costura
+                  Genialidade em foco: explorando o mundo das pessoas
+                  superdotadas
                 </div>
                 <div className="text-right text-xs">17 horas atrás</div>
               </div>
@@ -274,10 +276,11 @@ const homePage = (
           <div className="flex h-[150px] min-w-[250px] flex-col justify-end overflow-hidden rounded border border-gray6 bg-event-1 bg-no-repeat">
             <div className="flex flex-col items-center justify-center gap-1 bg-white py-1 text-center text-blue">
               <div className="text-sm leading-tight tracking-normal">
-                Celebração do Dia Internacional de Museus e Dia do Físico
+                NOVA DATA - 1º semestre de 2024 - Olimpíadas de Simulação do
+                HC-UFU/Ebserh
               </div>
               <div className="text-xs">
-                18/05/2023 - 19:00 até 20/05/2023 - 20:00
+                01/01/2024 - 07:30 até 01/07/2024 - 19:00
               </div>
             </div>
           </div>
@@ -285,22 +288,19 @@ const homePage = (
           <div className="flex h-[150px] min-w-[250px] flex-col justify-end overflow-hidden rounded border border-gray6 bg-event-2 bg-no-repeat">
             <div className="flex flex-col items-center justify-center gap-1 bg-white py-1 text-center text-blue">
               <div className="text-sm leading-tight tracking-normal">
-                Oficina: Leitura Instrumental em Língua Inglesa para Enem e
-                Vestibular
+                Feira ArtCult Bibliotecas UFU
               </div>
-              <div className="text-xs">
-                15/05/2023 - 17:30 até 25/05/2023 - 19:00
-              </div>
+              <div className="text-xs">01/01/2024 - 08:00</div>
             </div>
           </div>
 
           <div className="flex h-[150px] min-w-[250px] flex-col justify-end overflow-hidden rounded border border-gray6 bg-event-3 bg-no-repeat">
             <div className="flex flex-col items-center justify-center gap-1 bg-white py-1 text-center text-blue">
               <div className="text-sm leading-tight tracking-normal">
-                Escrita acadêmica para estudantes estrangeiros - Módulo II
+                Oficinas de Tai Chi Chuan e Chi Kung
               </div>
               <div className="text-xs">
-                12/05/2023 - 14:00 até 16/06/2023 - 15:30
+                12/03/2024 - 17:00 até 02/07/2024 - 19:00
               </div>
             </div>
           </div>
@@ -308,22 +308,18 @@ const homePage = (
           <div className="flex h-[150px] min-w-[250px] flex-col justify-end overflow-hidden rounded border border-gray6 bg-event-4 bg-no-repeat">
             <div className="flex flex-col items-center justify-center gap-1 bg-white py-1 text-center text-blue">
               <div className="text-sm leading-tight tracking-normal">
-                Pró-Reitoria de Gestão de Pessoas no Hospital de Clínicas
+                I Webinar Internacional sobre Temas Contemporâneos em Ciência
               </div>
-              <div className="text-xs">
-                02/05/2023 - 15:00 até 23/05/2023 - 19:00
-              </div>
+              <div className="text-xs">15/04/2024 - 14:00 até 24/06/2024</div>
             </div>
           </div>
 
           <div className="flex h-[150px] min-w-[250px] flex-col justify-end overflow-hidden rounded border border-gray6 bg-event-5 bg-no-repeat">
             <div className="flex flex-col items-center justify-center gap-1 bg-white py-1 text-center text-blue">
               <div className="text-sm leading-tight tracking-normal">
-                Minicurso de extensão Ficção cientifica na Língua Inglesa
+                Curso de Extensão de Língua Inglesa - Turma 3
               </div>
-              <div className="text-xs">
-                29/04/2023 - 15:00 até 03/06/2023 - 16:00
-              </div>
+              <div className="text-xs">22/04/2024 - 00:00 até 28/06/2024</div>
             </div>
           </div>
         </div>
@@ -387,7 +383,7 @@ const digitalIdPage = (setDigitalId: (digitalId: boolean) => void) => (
         <div className="absolute ml-[10px] mt-[-17px] h-[130px] w-[130px] rounded-full border-4 border-blue bg-profile-pic bg-cover bg-center"></div>
         <div className="flex h-full flex-col items-center justify-center pl-[150px] pr-[10px] text-center">
           <div className="font-bold leading-none tracking-normal">
-            MATHEUS FERREIRA RIGUETTE DE SOUZA
+            VINICIUS CARVALHO CAZAROTTI
           </div>
           <div className="mt-1 text-sm leading-none">
             GRADUAÇÃO EM SISTEMAS DE INFORMAÇÃO: BACHARELADO - NOTURNO
@@ -401,19 +397,19 @@ const digitalIdPage = (setDigitalId: (digitalId: boolean) => void) => (
             Matrícula:
           </div>
           <div className="border-b border-gray5 px-4 py-1 font-medium">
-            11811BSI241
+            11811BSI227
           </div>
           <div className="border-b border-gray5 bg-gray3 px-4 py-1 font-bold text-gray4">
             CPF:
           </div>
           <div className="border-b border-gray5 px-4 py-1 font-medium">
-            146.621.666-24
+            138.740.766-01
           </div>
           <div className="border-b border-gray5 bg-gray3 px-4 py-1 font-bold text-gray4">
             R.G / Org. Exp.:
           </div>
           <div className="border-b border-gray5 px-4 py-1 font-medium">
-            MG21090224 - PC/MG
+            MG18412386 - ssp/MG
           </div>
           <div className="border-b border-gray5 bg-gray3 px-4 py-1 font-bold text-gray4">
             Naturalidade:
@@ -425,20 +421,20 @@ const digitalIdPage = (setDigitalId: (digitalId: boolean) => void) => (
             Filiação:
           </div>
           <div className="border-b border-gray5 px-4 py-1 font-medium">
-            <div>Marcio Riguette de Souza</div>
-            <div>Irisléa Ferreira dos Santos</div>
+            <div>Alexandre Cazarotti</div>
+            <div>Adilce Francisca de Carvalho</div>
           </div>
           <div className="border-b border-gray5 bg-gray3 px-4 py-1 font-bold text-gray4">
             Data de nascimento:
           </div>
           <div className="border-b border-gray5 px-4 py-1 font-medium">
-            14/02/2001
+            04/11/1999
           </div>
           <div className="border-b border-gray5 bg-gray3 px-4 py-1 font-bold text-gray4">
             Data de Validade:
           </div>
           <div className="border-b border-gray5 px-4 py-1 font-medium">
-            30/06/2023
+            30/12/2024
           </div>
         </div>
       </div>
