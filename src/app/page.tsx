@@ -276,11 +276,11 @@ const homePage = (
           <div className="flex h-[150px] min-w-[250px] flex-col justify-end overflow-hidden rounded border border-gray6 bg-event-1 bg-no-repeat">
             <div className="flex flex-col items-center justify-center gap-1 bg-white py-1 text-center text-blue">
               <div className="text-sm leading-tight tracking-normal">
-                NOVA DATA - 1º semestre de 2024 - Olimpíadas de Simulação do
+                NOVA DATA - 2º semestre de 2024 - Olimpíadas de Simulação do
                 HC-UFU/Ebserh
               </div>
               <div className="text-xs">
-                01/01/2024 - 07:30 até 01/07/2024 - 19:00
+                26/09/2024 - 07:30 até 26/09/2024 - 19:00
               </div>
             </div>
           </div>
@@ -290,7 +290,7 @@ const homePage = (
               <div className="text-sm leading-tight tracking-normal">
                 Feira ArtCult Bibliotecas UFU
               </div>
-              <div className="text-xs">01/01/2024 - 08:00</div>
+              <div className="text-xs">26/09/2024 - 08:00</div>
             </div>
           </div>
 
@@ -300,7 +300,7 @@ const homePage = (
                 Oficinas de Tai Chi Chuan e Chi Kung
               </div>
               <div className="text-xs">
-                12/03/2024 - 17:00 até 02/07/2024 - 19:00
+                25/09/2024 - 17:00 até 30/09/2024 - 19:00
               </div>
             </div>
           </div>
@@ -310,7 +310,7 @@ const homePage = (
               <div className="text-sm leading-tight tracking-normal">
                 I Webinar Internacional sobre Temas Contemporâneos em Ciência
               </div>
-              <div className="text-xs">15/04/2024 - 14:00 até 24/06/2024</div>
+              <div className="text-xs">15/07/2024 - 14:00 até 30/09/2024</div>
             </div>
           </div>
 
@@ -319,7 +319,7 @@ const homePage = (
               <div className="text-sm leading-tight tracking-normal">
                 Curso de Extensão de Língua Inglesa - Turma 3
               </div>
-              <div className="text-xs">22/04/2024 - 00:00 até 28/06/2024</div>
+              <div className="text-xs">22/07/2024 - 00:00 até 28/09/2024</div>
             </div>
           </div>
         </div>
@@ -383,10 +383,10 @@ const digitalIdPage = (setDigitalId: (digitalId: boolean) => void) => (
         <div className="absolute ml-[10px] mt-[-17px] h-[130px] w-[130px] rounded-full border-4 border-blue bg-profile-pic bg-cover bg-center"></div>
         <div className="flex h-full flex-col items-center justify-center pl-[150px] pr-[10px] text-center">
           <div className="font-bold leading-none tracking-normal">
-            VINICIUS CARVALHO CAZAROTTI
+            JOÃO GUILHERME OLIVEIRA SILVA
           </div>
           <div className="mt-1 text-sm leading-none">
-            GRADUAÇÃO EM SISTEMAS DE INFORMAÇÃO: BACHARELADO - NOTURNO
+            GRADUAÇÃO EM ZOOTECNIA: BACHARELADO - INTEGRAL
           </div>
         </div>
       </div>
@@ -397,19 +397,19 @@ const digitalIdPage = (setDigitalId: (digitalId: boolean) => void) => (
             Matrícula:
           </div>
           <div className="border-b border-gray5 px-4 py-1 font-medium">
-            11811BSI227
+            11821ZTN020
           </div>
           <div className="border-b border-gray5 bg-gray3 px-4 py-1 font-bold text-gray4">
             CPF:
           </div>
           <div className="border-b border-gray5 px-4 py-1 font-medium">
-            138.740.766-01
+            018.608.256-80
           </div>
           <div className="border-b border-gray5 bg-gray3 px-4 py-1 font-bold text-gray4">
             R.G / Org. Exp.:
           </div>
           <div className="border-b border-gray5 px-4 py-1 font-medium">
-            MG18412386 - ssp/MG
+            MG19385339 - pc/MG
           </div>
           <div className="border-b border-gray5 bg-gray3 px-4 py-1 font-bold text-gray4">
             Naturalidade:
@@ -421,14 +421,14 @@ const digitalIdPage = (setDigitalId: (digitalId: boolean) => void) => (
             Filiação:
           </div>
           <div className="border-b border-gray5 px-4 py-1 font-medium">
-            <div>Alexandre Cazarotti</div>
-            <div>Adilce Francisca de Carvalho</div>
+            <div>Carlos Ferreira da Silva</div>
+            <div>Maria Queiroz de Oliveira</div>
           </div>
           <div className="border-b border-gray5 bg-gray3 px-4 py-1 font-bold text-gray4">
             Data de nascimento:
           </div>
           <div className="border-b border-gray5 px-4 py-1 font-medium">
-            04/11/1999
+            17/11/2000
           </div>
           <div className="border-b border-gray5 bg-gray3 px-4 py-1 font-bold text-gray4">
             Data de Validade:
