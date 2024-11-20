@@ -380,7 +380,7 @@ const digitalIdPage = (setDigitalId: (digitalId: boolean) => void) => (
       <div className="h-20 bg-ufu-header bg-contain bg-center bg-no-repeat bg-origin-content px-5 pb-6 pt-4"></div>
 
       <div className="h-[100px] border-b-4 border-t-4 border-blue bg-white">
-        <div className="absolute ml-[10px] mt-[-17px] h-[130px] w-[130px] rounded-full border-4 border-blue bg-profile-pic bg-cover bg-center"></div>
+        <div className="absolute ml-[10px] mt-[-17px] h-[130px] w-[130px] rounded-full border-4 border-blue bg-profile-pic-thiago bg-cover bg-center"></div>
         <div className="flex h-full flex-col items-center justify-center pl-[150px] pr-[10px] text-center">
           <div className="font-bold leading-none tracking-normal">
             THIAGO FERNANDO CUEVAS MESTANZA

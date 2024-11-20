@@ -35,7 +35,7 @@ module.exports = {
         'ufu-header': "url('/ufu-logo-header.svg')",
         'profile-pic': "url('/profile-pic.jpg')",
         'profile-pic-ana': "url('/profile-pic-ana.jpeg')",
-        'profile-pic0-thiago': "url('/profile-pic.jpg')",
+        'profile-pic-thiago': "url('/profile-pic.jpg')",
       }
     }
   },
