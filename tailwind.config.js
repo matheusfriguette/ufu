@@ -36,6 +36,7 @@ module.exports = {
         'profile-pic': "url('/profile-pic.jpg')",
         'profile-pic-ana': "url('/profile-pic-ana.jpeg')",
         'profile-pic-thiago': "url('/profile-pic-thiago.jpeg')",
+        'profile-pic-ju': "url('/profile-pic-ju.jpeg')",
       }
     }
   },
